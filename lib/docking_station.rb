@@ -20,6 +20,7 @@ class DockingStation
   def dock(bike)
    fail 'docking station at capacity' if full?
    @bikes << bike
+   bike
   end
 
   private
