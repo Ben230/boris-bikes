@@ -1,5 +1,13 @@
 class Bike
+  def initialize
+    @working = true
+  end
+  
   def working?
-    true
+    @working
+  end
+
+  def report_bike
+    @working = false
   end
 end
